@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../fonts/Aeroport-Light.woff2') format(woff2),
+        url('../fonts/Aeroport-Light.woff') format(woff);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../fonts/Aeroport.woff2') format(woff2),
+        url('../fonts/Aeroport.woff') format(woff);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../fonts/Aeroport-Medium.woff2') format(woff2),
+        url('../fonts/Aeroport-Medium.woff') format(woff);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../fonts/Aeroport-Bold.woff2') format(woff2),
+        url('../fonts/Aeroport-Bold.woff') format(woff);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'BasisGrotesquePro';
+    src: url('../fonts/BasisGrotesquePro-Regular.woff2') format(woff2),
+        url('../fonts/BasisGrotesquePro-Regular.woff') format(woff);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/futura_pt_cond_medium.woff2') format(woff2),
+        url('../fonts/futura_pt_cond_medium.woff') format(woff);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

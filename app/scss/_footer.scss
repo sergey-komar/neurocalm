@@ -1,0 +1,44 @@
+.footer {
+    padding: 6rem 0 8rem 0;
+    background: #474747;
+}
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-box__left-logo {
+    display: block;
+    margin-bottom: 2.5rem;
+}
+.footer-box__left-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #f193bd;
+}
+.footer-box__social {
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 20px;
+}
+.footer-box__right-btn {
+    padding-left: 15px;
+    position: relative;
+    width: 130px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    border: 2px solid  #f193bd;
+    border-left: none;
+    background-color: transparent;
+}
+.footer-box__right-btn::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 0;
+    background: url('../images/svazatcia-footer.svg') no-repeat;
+}
