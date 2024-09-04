@@ -8,6 +8,8 @@
     width: 100%;
     position: absolute;
     right: 80px;
+    top: 0;
+    transition: all .4s ease-in;
 }
 .header__one {
     width: 99.5%;
@@ -116,4 +118,10 @@
     transform: translateX(-50%);
     width: 35px;
     margin: 0 auto;
+}
+
+.header-bg{
+    position: fixed;
+    transition: all .4s ease-in;
+    z-index: 3;
 }
