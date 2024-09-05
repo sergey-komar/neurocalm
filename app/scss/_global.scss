@@ -13,6 +13,9 @@ body {
 html{
 	font-size: 10px;
 }
+html {
+	overflow-y: scroll;
+  }
 body > * {
 	flex-shrink: 0;
 	/*sticky footer*/

@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
       const header = document.querySelector('.header__wrapper');
       if (header) {
          window.addEventListener("scroll", () => {
-            if (window.scrollY > 10) {
+            if (window.scrollY > 0) {
             header.classList.add("header-bg");
             } else {
             header.classList.remove("header-bg");
@@ -55,5 +55,40 @@ window.addEventListener('DOMContentLoaded', ()=> {
       }
 
 
+         const modalBtn = document.querySelector('.footer-box__right-btn');
+         const modal = document.querySelector('.modal');
+         const modalCloseBtn = document.querySelector('.modal__close');
 
+          
+            modalBtn.addEventListener('click', ()=>{
+            modal.classList.add('show');
+            modal.classList.remove('hide');
+            document.body.style.overflow = 'hidden';
+        })
+  
+
+    modalCloseBtn.addEventListener('click', ()=>{
+            modal.classList.add('hide');
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+    });
+
+    modal.addEventListener('click', (e)=>{
+        if(e.target == modal){
+            modal.classList.add('hide');
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+
+        }
+    });
+
+    document.addEventListener('keydown', (e)=>{
+        if(e.code == 'Escape' && modal.classList.contains('show')){
+            modal.classList.add('hide');
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    })
+
+       
 });
