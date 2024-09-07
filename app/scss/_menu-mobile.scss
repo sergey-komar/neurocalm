@@ -154,7 +154,7 @@
     .header{
         background: url('../images/bg-mobile.png') no-repeat;
         background-position: bottom right;
-        min-height: 60%;
+        min-height: 100%;
         background-size: cover;
     }
     .header-heading{
@@ -171,7 +171,7 @@
     }
     .header-heading__box{
         position: relative;
-        min-height: 60svh;
+        min-height: 100svh;
     }
     .header-heading__box-title{
         margin-bottom: 30px;
@@ -192,5 +192,8 @@
     .header__three,
     .header__inner{
         height: 50px;
+    }
+    .header-heading__arrow{
+        bottom: 10px;
     }
 }
