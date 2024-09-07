@@ -1,0 +1,319 @@
+@media(max-width: 1500px){
+    .neiro__link{
+        font-size: 16px;
+    }
+    .neiro__links_right,
+    .neiro__links_left{
+        max-width: 100%;
+        width: 300px;
+    }
+}
+@media(max-width: 1250px){
+    .top-block__left-number::after{
+        width: 855%;
+    }
+    .top-block__right::before{
+        width: 95%;
+    }
+    .questions-accardion{
+        column-gap: 2rem;
+    }
+   
+}
+
+@media(max-width: 1200px){
+    .distributors-block__img {
+        width: 650px;
+        margin: 0 auto;
+    }
+    .distributors-block__ispania{
+        left: 271px;
+        top: 118px;
+    }
+    .distributors-block__uar{
+        left: 311px;
+        top: 255px;
+    }
+    .distributors-block__russia{
+        left: 317px;
+        top: 39px;
+    }
+    .distributors-block__korea{
+        left: 522px;
+        top: 141px;
+    }
+  
+}
+
+
+
+@media(max-width: 998px){
+    .touch-box{
+        flex-direction: column;
+    }
+    .touch-box__input,
+    .touch-box__btn{
+        width: 100%;
+    }
+    .touch-box__title{
+        max-width: 100%;
+    }
+    .result-slider__item{
+        width: 35rem;
+    }
+}
+
+
+
+@media(max-width: 768px){
+    .drug,
+    .top,
+    .form{
+        padding: 7rem 0;
+    }
+    .drug-block{
+        flex-direction: column;
+    }
+    .drug-block__left,
+    .drug-block__right{
+        width: 100%;
+    }
+    .advantages-block__img::before{
+        display: none;
+    }
+    .advantages-block__img{
+        width: 0;
+    }
+    .advantages-block__content,
+    .top-block__right{
+        width: 100%;
+    }
+    .top-block__left-number::after,
+    .top-block__right::before,
+    .top-block__left-number{
+        display: none;
+    }
+    .top-block__left{
+        width: 0;
+    }
+    .top-block{
+        gap: 0;
+    }
+    .top-block__content{
+        width: calc(100% / 4);
+    }
+    .top-block__right{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .questions__inner{
+        width: 100%;
+    }
+    .form-block{
+        flex-direction: column;
+    }
+    .form-block__img{
+        display: none;
+    }
+    .form-block__contact{
+        padding: 20px;
+    }
+    .distributors-block{
+        display: none;
+    }
+    .distributors__title{
+        margin-bottom: 20px;
+    }
+    .distributors-mobile{
+        display: block;
+    }
+    .distributors-mobile__content{
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 3px 3px 11px 0 rgba(71, 71, 71, 0.15);
+    }
+    .distributors-mobile__content-title{
+        margin-bottom: 10px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .distributors-ispania__content-logo{
+        font-family: 'BasisGrotesquePro';
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .distributors-ispania__content-title,
+    .distributors-mobile__content{
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #474747;
+    }
+    .distributors-ispania__content-title{
+        margin-top: 10px;
+    }
+    .neiro__wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .neiro__links_right{
+        margin-right: 0;
+        text-align: center;
+    }
+    .neiro__links_left{
+        margin-left: 0;
+        text-align: center;
+    }
+    .neiro__info{
+        width: 100%;
+    }
+}
+
+
+
+
+@media(max-width: 550px){
+    .title,
+    .advantages-block__content-title,
+    .form-block__contact-title,
+    .neiro__header{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .drug,
+    .advantages,
+    .top,
+    .result,
+    .questions,
+    .form,
+    .partners{
+        padding: 40px 0;
+    }
+    .drug-block{
+        gap: 10px;
+    }
+    .drug-block__right-subtitle{
+        font-size: 28px;
+    }
+    .drug-block__left-text,
+    .advantages-block__info-text{
+        font-size: 16px;
+    }
+    .drug-block__right{
+        padding: 15px;
+    }
+    .advantages-block{
+        flex-direction: column;
+    }
+    .advantages-block__info-text{
+        width: 100%;
+    }
+    .advantages-block__info{
+        gap: 2rem;
+    }
+    .top-block__right{
+        gap: 1rem;
+    }
+    .touch{
+        padding: 15px;
+    }
+    .touch-box__title{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .slick-dots{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .slick-dots li button{
+        font-size: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #474747;
+    }
+     li.slick-active button{
+        background-color: #474747;
+    }
+    .result-slider__item{
+        padding: 10px;
+    }
+    .result-slider__inner{
+        gap: 1rem;
+    }
+    .result-slider__img-big{
+        width: 85px;
+        height: 85px;
+    }
+    .result-slider__item{
+        width: 100%;
+    }
+    .result-slider__left::after{
+        display: none;
+    }
+    .questions__wrapper{
+        padding: 10px;
+    }
+    .questions__wrapper{
+        margin-bottom: 20px;
+    }
+    .questions-accardion__title{
+        font-size: 22px;
+    }
+    .form-box__input{
+        width: 100%;
+    }
+    .form-box__btn{
+        width: 100%;
+    }
+    .filter-color__text{
+        font-size: 16px;
+    }
+    .form-block__contact-textarea{
+        margin: 20px 0;
+    }
+    .partners__btn{
+        width: 100%;
+    }
+    .neiro__link{
+        margin-bottom: 10px;
+    }
+    .neiro{
+        overflow-x: hidden;
+    }
+    .modal__inner{
+        width: 300px;
+    }
+    .modal__inner .form-block__contact-title{
+        margin-bottom: 5px;
+    }
+    .modal__inner .form-block__contact{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .modal__inner .form-block__contact-textarea{
+        margin: 0px 0 10px 0;
+    }
+    .footer{
+        padding: 4rem 0;
+    }
+    .footer-box{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-box__right-btn{
+        width: 100%;
+        border-left: 2px solid  #f193bd;
+    }
+    .footer-box__right-btn::before{
+        display: none;
+    }
+}
