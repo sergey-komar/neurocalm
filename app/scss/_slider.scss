@@ -35,6 +35,7 @@
 .result-slider__img-big {
     width: 100%;
     height: 100px;
+    object-fit: cover;
 }
 .result-slider__left::after{
     position: absolute;
@@ -53,6 +54,7 @@
 .result-slider__img-small img{
     min-width: 30px;
     height: 30px;
+    object-fit: cover;
 }
 .result-slider__right {
     width: 50%;
@@ -109,7 +111,7 @@
     height: 20px;
     position: absolute;
     top: 50%;
-    z-index: 2;
+  
 }
 .partners-slider .slick-prev{
     background: url('../images/slider-arrows-left.svg') no-repeat;

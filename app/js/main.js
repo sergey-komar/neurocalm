@@ -1,5 +1,5 @@
 $(function () {
-  
+  //Счётчик слайдов
      var $status = $('.slider__counter');
      var $slick = $('.result-slider');
  
@@ -76,6 +76,20 @@ $(function () {
      $('.questions-accardion__btn').on('click', function(){
         $(this).next().slideToggle(500); 
      });
+
+
+     //плавная прокрутка
+     var $page = $('html, body');
+    $('a[href*="#"]').click(function() {
+        $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 300);
+        return false;
+    });
+
+    Fancybox.bind("[data-fancybox]", {
+      // Your custom options
+    });
 
 })
 

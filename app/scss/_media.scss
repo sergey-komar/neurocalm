@@ -2,11 +2,6 @@
     .neiro__link{
         font-size: 16px;
     }
-    .neiro__links_right,
-    .neiro__links_left{
-        max-width: 100%;
-        width: 300px;
-    }
 }
 @media(max-width: 1250px){
     .top-block__left-number::after{
@@ -196,6 +191,12 @@
     .drug-block{
         gap: 10px;
     }
+    .drug-block__item{
+        gap: 10px;
+    }
+    .drug-block__item-number{
+        text-align: right;
+    }
     .drug-block__right-subtitle{
         font-size: 28px;
     }
@@ -253,7 +254,7 @@
     }
     .result-slider__img-big{
         width: 85px;
-        height: 85px;
+        
     }
     .result-slider__item{
         width: 100%;
@@ -317,5 +318,10 @@
     }
     .footer-box__right-btn::before{
         display: none;
+    }
+    .footer-box__right-btn{
+        padding: 0;
+        height: 40px;
+        line-height: 36px;
     }
 }

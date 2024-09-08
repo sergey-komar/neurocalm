@@ -481,18 +481,21 @@
     gap: 20px;
     cursor: pointer;
 }
-.form-block__input {
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-}
+
 .form-block__checkbox {
     width: 15px;
     height: 15px;
     position: absolute;
     border: 1px solid #474747;
     border-radius: 50%;
+}
+.form-block__input {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    visibility: hidden;
+
 }
 .form-block__input:checked + .form-block__checkbox{
     background: url('../images/krug.png') no-repeat;
@@ -674,7 +677,9 @@
    left: 50%;
    transform: translate(-50%, -50%);
 }
-
+.modal__inner .form-box__input--small{
+    width: 250px;
+}
 .modal__close{
     position: absolute;
     top: 8px;
