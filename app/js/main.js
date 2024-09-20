@@ -100,34 +100,53 @@ window.addEventListener('DOMContentLoaded', ()=> {
       const menu = document.querySelector('.menu');
       const mobile = document.querySelector('.nav-icon');
 
-      mobile.addEventListener('click', function(){
+      if(mobile){
+        mobile.addEventListener('click', function(){
           this.classList.toggle('nav-icon--active');
           menu.classList.toggle('nav--active');
 
       });
+      }
+     
       //Находим ссылки внутри мобильной навигации
       const navLinks = document.querySelectorAll('.menu__list a');
 
       //Обходим ссылки методом forEach
-      navLinks.forEach(function (item) {
-        //Для каждой ссылки добавляем прослушку по событию "Клик"
-        item.addEventListener('click', function () {
-          mobile.classList.remove('nav-icon--active'); // Убираем активный класс у иконки моб. навигации
-          menu.classList.remove('nav--active'); // Убираем активный класс у блока моб. навигации
-        
+      if(navLinks){
+        navLinks.forEach(function (item) {
+          //Для каждой ссылки добавляем прослушку по событию "Клик"
+          item.addEventListener('click', function () {
+            mobile.classList.remove('nav-icon--active'); // Убираем активный класс у иконки моб. навигации
+            menu.classList.remove('nav--active'); // Убираем активный класс у блока моб. навигации
+          
+          });
         });
-      });
+      }
+     
+      
 
+       const thankyouClose = document.querySelector('.thankyou-block__close');
+       const thankyou = document.querySelector('.thankyou');
 
+       if(thankyouClose){
+        thankyouClose.addEventListener('click', () => {
+
+          thankyou.classList.add('hide');
+        });
+       }
+      
   
       const accardionBtn = document.querySelectorAll('.questions-accardion__btn');
 
-      accardionBtn.forEach(item => {
-         item.addEventListener('click', () => {
-            item.classList.toggle('open');
-         })
-      });
-
+      if(accardionBtn){
+        accardionBtn.forEach(item => {
+          item.addEventListener('click', () => {
+             item.classList.toggle('open');
+          })
+       });
+ 
+      }
+     
 
 
       const header = document.querySelector('.header__wrapper');
@@ -148,28 +167,34 @@ window.addEventListener('DOMContentLoaded', ()=> {
          const modal = document.querySelector('.modal');
          const modalCloseBtn = document.querySelector('.modal__close');
 
-          
-            modalBtn.addEventListener('click', ()=>{
-            modal.classList.add('show');
-            modal.classList.remove('hide');
-            document.body.style.overflow = 'hidden';
-        })
+          if(modalBtn){
+              modalBtn.addEventListener('click', ()=>{
+              modal.classList.add('show');
+              modal.classList.remove('hide');
+              document.body.style.overflow = 'hidden';
+          })
+          }
+         
   
-
-    modalCloseBtn.addEventListener('click', ()=>{
-            modal.classList.add('hide');
-            modal.classList.remove('show');
-            document.body.style.overflow = '';
-    });
-
-    modal.addEventListener('click', (e)=>{
-        if(e.target == modal){
-            modal.classList.add('hide');
-            modal.classList.remove('show');
-            document.body.style.overflow = '';
-
-        }
-    });
+          if(modalCloseBtn){
+            modalCloseBtn.addEventListener('click', ()=>{
+              modal.classList.add('hide');
+              modal.classList.remove('show');
+              document.body.style.overflow = '';
+      });
+          }
+    
+          if(modal){
+            modal.addEventListener('click', (e)=>{
+              if(e.target == modal){
+                  modal.classList.add('hide');
+                  modal.classList.remove('show');
+                  document.body.style.overflow = '';
+      
+              }
+          });
+          }
+    
 
     document.addEventListener('keydown', (e)=>{
         if(e.code == 'Escape' && modal.classList.contains('show')){
